@@ -1,4 +1,4 @@
 ARG BASE=centos:7
 FROM $BASE
 
-LABEL maintainer="Mi
+LABEL maintainer="Mikhail Buslaev (buslaevnmh
