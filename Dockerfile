@@ -1,2 +1,4 @@
 ARG BASE=centos:7
-FROM $
+FROM $BASE
+
+LABEL maintainer="Mi
