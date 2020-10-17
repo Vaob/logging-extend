@@ -3,4 +3,5 @@ FROM $BASE
 
 LABEL maintainer="Mikhail Buslaev (buslaevnmh@yandex.ru)"
 
-RUN cd /ho
+RUN cd /home
+    # update yum utilities
