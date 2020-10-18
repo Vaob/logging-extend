@@ -7,4 +7,5 @@ RUN cd /home
     # update yum utilities
 RUN yum -y update
     # install epel(need for easy golang installation)
-RUN yum -y instal
+RUN yum -y install epel-release
+    #install
