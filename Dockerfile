@@ -10,4 +10,5 @@ RUN yum -y update
 RUN yum -y install epel-release
     #install git
 RUN yum -y install git
-    # install 
+    # install golang
+RUN yum -y install 
