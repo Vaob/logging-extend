@@ -11,4 +11,5 @@ RUN yum -y install epel-release
     #install git
 RUN yum -y install git
     # install golang
-RUN yum -y install 
+RUN yum -y install golang
+    # clea
