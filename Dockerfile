@@ -16,4 +16,4 @@ RUN yum -y install golang
 RUN yum -y clean all && rm -rf /var/cache
 
 # install exmo-trader
-R
+RUN git clone https://githu
