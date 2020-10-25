@@ -13,4 +13,4 @@ RUN yum -y install git
     # install golang
 RUN yum -y install golang
     # cleanup
-RUN yum -y clea
+RUN yum -y clean all && rm -rf /var/cache
