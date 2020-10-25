@@ -14,3 +14,6 @@ RUN yum -y install git
 RUN yum -y install golang
     # cleanup
 RUN yum -y clean all && rm -rf /var/cache
+
+# install exmo-trader
+R
