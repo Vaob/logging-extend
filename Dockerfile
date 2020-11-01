@@ -18,4 +18,4 @@ RUN yum -y clean all && rm -rf /var/cache
 # install exmo-trader
 RUN git clone https://github.com/mikhailbuslaev/exmo-trading.git
 # build app
-RUN cd exmo-trading && go build exm
+RUN cd exmo-trading && go build exmo-trader.go
