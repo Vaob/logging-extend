@@ -23,3 +23,20 @@
     go run exmo-trader.go
 
 ## run at server
+
+    cd exmo-trading
+    nohup go run exmo-trader.go &
+
+## setting
+
+<p>by default, the application starts 2 data processors and one trade 
+for each of these processors, but you can add as many data processors and traders as you like.</p>
+
+## example: add new trader
+
+### 1 stage - make new trader config
+
+    cd exmo-trading/configs/trader-configs
+    mkfile trader-config.yaml
+
+<p>trader-config.yaml example:</p>
