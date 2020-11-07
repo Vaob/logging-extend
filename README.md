@@ -60,3 +60,22 @@ for each of these processors, but you can add as many data processors and trader
 ><p>CandlesFile is a file that will be analyzed by the trading strategy.</p>
 >
 ><p>CandlesFileVolume is a volume of records(candles) in CandlesFile, default: 250.</p>
+>
+><p>TradesFileVolume is a maximum volume of open trades in TradesFile, default: 10.</p>
+>
+><p>StopLimitPercent is a this is a part of the current deal price, from which the limit is set, 0.015 means 1.5%.</p>
+>
+><p>TradeAmount is a volume of trade, example: 5 means 5 usdt in "ETH_USDT"</p>
+>
+><p>TradeTimeout is a reload duration of trader</p>
+>
+
+### 2 stage - change exmo-trader.go
+
+    cd exmo-trading
+<p>add new line to PrepareApp() after app.Traders = append(... and before fmt.Println("prepared datahandlers: ")</p>
+
+    app.Traders = append(app.Traders, PrepareTrader(path, path+
+    	"/configs/trader-configs/trader-config.yaml", &strategies.RSI{}))
+
+<p>&strategies.RSI{} and &strategies.BollingerBands{} is 2 available strategies at this stage of project</p>
