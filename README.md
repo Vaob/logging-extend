@@ -40,3 +40,23 @@ for each of these processors, but you can add as many data processors and trader
     mkfile trader-config.yaml
 
 <p>trader-config.yaml example:</p>
+
+    TradingPair : "BTC_USDT"
+    TradesFile  : "/cache/trades/5min-btc-usdt-trades.csv"
+    TradesHistoryFile : "/cache/trades-history/5min-btc-usdt-trades-history.csv"
+    CandlesFile       : "/cache/candles/5min-btc-usdt-candles.csv"
+    CandlesFileVolume : 250
+    TradesFileVolume  : 10
+    StopLimitPercent  : 0.015
+    TradeAmount : 5
+    TraderTimeout : 30
+
+><p>TradingPair examples : "ETH_USDT", "BTC_ETH".</p>
+>
+><p>TradesFile is a file that will store open trades.</p>
+>
+><p>TradesHistoryFile is a file that will store history of closed trades.</p>
+>
+><p>CandlesFile is a file that will be analyzed by the trading strategy.</p>
+>
+><p>CandlesFileVolume is a volume of records(candles) in CandlesFile, default: 250.</p>
