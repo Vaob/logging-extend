@@ -79,3 +79,23 @@ for each of these processors, but you can add as many data processors and trader
     	"/configs/trader-configs/trader-config.yaml", &strategies.RSI{}))
 
 <p>&strategies.RSI{} and &strategies.BollingerBands{} is 2 available strategies at this stage of project</p>
+
+### 3 stage
+
+<p>save changes, now you have new trade handler.</p>
+
+## example: add new datahandler
+
+<p>if you want trade another timeframe or another pair, you need add new </p>
+<p>data handler for this timeframe or pair.</p>
+
+### 1 stage - make new datahandler config
+
+    cd exmo-trading/configs/datahandler-configs
+    mkfile datahandler-config.yaml
+
+<p>datahandler-config.yaml example:</p>
+
+    Symbol : "BTC_USDT"
+    Resolution : 5
+    CandlesFile : "/cache/candles/5min-btc-usdt-candles.csv"
