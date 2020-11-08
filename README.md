@@ -123,3 +123,5 @@ for each of these processors, but you can add as many data processors and trader
     	"/configs/datahandler-configs/datahandler-config.yaml"))
 
 ### 3 stage
+
+<p>save changes, now you have new data handler.</p>
