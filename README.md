@@ -99,3 +99,27 @@ for each of these processors, but you can add as many data processors and trader
     Symbol : "BTC_USDT"
     Resolution : 5
     CandlesFile : "/cache/candles/5min-btc-usdt-candles.csv"
+    CandlesVolume : 250
+    DataHandlerTimeout : 60
+
+><p>Symbol examples : "ETH_USDT", "BTC_ETH".</p>
+>
+><p>Resolution means duration of single candle, 5 means 5 minute candles.</p>
+>
+><p>CandlesFile is a file of candles.</p>
+>
+><p>CandlesFileVolume is a volume of candles in CandlesFile.</p>
+>
+><p>DataHandlerTimeout is a is a reload duration of datahandler.</p>
+>
+
+### 2 stage - change exmo-trader.go
+
+    cd exmo-trading
+
+<p>add new line to PrepareApp() after app.Datahandlers = append(... and before return &app)</p>
+
+    app.DataHandlers = append(app.DataHandlers, PrepareDataHandler(path, path+
+    	"/configs/datahandler-configs/datahandler-config.yaml"))
+
+### 3 stage
