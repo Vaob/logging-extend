@@ -2,4 +2,4 @@ package data // this package define and descibes behaviour of main data types in
 
 import (
 	"encoding/csv"  // all data stored in csv cache ("cache/file.csv")
-	"
+	"encoding/json"
