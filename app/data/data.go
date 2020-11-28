@@ -3,4 +3,5 @@ package data // this package define and descibes behaviour of main data types in
 import (
 	"encoding/csv"  // all data stored in csv cache ("cache/file.csv")
 	"encoding/json" // need for parsing candles and responses
-	"fmt"           // printi
+	"fmt"           // printing errors in console
+	
