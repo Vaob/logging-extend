@@ -5,4 +5,7 @@ import (
 	"encoding/json" // need for parsing candles and responses
 	"fmt"           // printing errors in console
 	"os"            // working with cache files(reading, writing, rewriting)
-	"strconv"       // need 
+	"strconv"       // need for working with csv
+)
+
+type
