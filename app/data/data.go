@@ -8,4 +8,5 @@ import (
 	"strconv"       // need for working with csv
 )
 
-type
+type Candles struct {
+	Arr
