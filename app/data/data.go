@@ -9,4 +9,5 @@ import (
 )
 
 type Candles struct {
-	Array []Candle `json:"candle
+	Array []Candle `json:"candles"` // candles array
+}
