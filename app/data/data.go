@@ -11,3 +11,5 @@ import (
 type Candles struct {
 	Array []Candle `json:"candles"` // candles array
 }
+
+type Candle struct
