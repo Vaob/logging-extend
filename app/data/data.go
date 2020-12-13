@@ -12,4 +12,5 @@ type Candles struct {
 	Array []Candle `json:"candles"` // candles array
 }
 
-type Candle struct
+type Candle struct {
+	Time   int64   `json:
