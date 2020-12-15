@@ -13,4 +13,4 @@ type Candles struct {
 }
 
 type Candle struct {
-	Time   int64   `json:
+	Time   int64   `json:"t"` // close time of ca
