@@ -15,4 +15,5 @@ type Candles struct {
 type Candle struct {
 	Time   int64   `json:"t"` // close time of candle
 	Open   float64 `json:"o"` // open price of candle
-	Close  float64 `json:"c"` // close price of cand
+	Close  float64 `json:"c"` // close price of candle
+	High   float64 `
