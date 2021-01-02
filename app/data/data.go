@@ -17,4 +17,5 @@ type Candle struct {
 	Open   float64 `json:"o"` // open price of candle
 	Close  float64 `json:"c"` // close price of candle
 	High   float64 `json:"h"` // high price of candle
-	Low    float64 `json:"l"` // low 
+	Low    float64 `json:"l"` // low price of candle
+	Volum
