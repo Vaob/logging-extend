@@ -22,4 +22,4 @@ type Candle struct {
 }
 
 type Trades struct {
-	
+	Array []Trade `js
