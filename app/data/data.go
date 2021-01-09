@@ -22,4 +22,8 @@ type Candle struct {
 }
 
 type Trades struct {
-	Array []Trade `json:"trades"` // trades arr
+	Array []Trade `json:"trades"` // trades array
+}
+
+type Trade struct {
+	
