@@ -26,4 +26,4 @@ type Trades struct {
 }
 
 type Trade struct {
-	Id         int64   `json
+	Id         int64   `json:"id"`          //
