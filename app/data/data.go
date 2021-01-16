@@ -26,4 +26,5 @@ type Trades struct {
 }
 
 type Trade struct {
-	Id         int64   `json:"id"`          //
+	Id         int64   `json:"id"`          // id of trade
+	Action  
