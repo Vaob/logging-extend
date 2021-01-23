@@ -27,4 +27,5 @@ type Trades struct {
 
 type Trade struct {
 	Id         int64   `json:"id"`          // id of trade
-	Action     string  `json:"action"`      // long or sho
+	Action     string  `json:"action"`      // long or short
+	OpenPrice  float64 
