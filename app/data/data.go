@@ -29,4 +29,5 @@ type Trade struct {
 	Id         int64   `json:"id"`          // id of trade
 	Action     string  `json:"action"`      // long or short
 	OpenPrice  float64 `json:"open-price"`  // starting price of trade
-	ClosePrice float64 `json:"close-price"` // f
+	ClosePrice float64 `json:"close-price"` // finished price of trade
+	
