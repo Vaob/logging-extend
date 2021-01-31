@@ -30,4 +30,5 @@ type Trade struct {
 	Action     string  `json:"action"`      // long or short
 	OpenPrice  float64 `json:"open-price"`  // starting price of trade
 	ClosePrice float64 `json:"close-price"` // finished price of trade
-	Quantity   float64 `json:"quantity"`    // trade volume, example : amount of usdt when y
+	Quantity   float64 `json:"quantity"`    // trade volume, example : amount of usdt when you buy btc
+	StopLimit  f
