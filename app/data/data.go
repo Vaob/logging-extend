@@ -36,4 +36,4 @@ type Trade struct {
 }
 
 type Ticker struct {
-	Buy
+	BuyPrice  string `js
