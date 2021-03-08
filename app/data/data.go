@@ -36,4 +36,4 @@ type Trade struct {
 }
 
 type Ticker struct {
-	BuyPrice  string `json:"buy_price"` // 
+	BuyPrice  string `json:"buy_price"` // ticker need for get
