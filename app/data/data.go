@@ -39,4 +39,5 @@ type Ticker struct {
 	BuyPrice  string `json:"buy_price"` // ticker need for getting actual price of trading pair
 	SellPrice string `json:"sell_price"`
 	LastTrade string `json:"last_trade"`
-	High      string `json
+	High      string `json:"high"`
+	Low       str
