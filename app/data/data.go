@@ -41,4 +41,5 @@ type Ticker struct {
 	LastTrade string `json:"last_trade"`
 	High      string `json:"high"`
 	Low       string `json:"low"`
-	Avg       string `json:"avg"
+	Avg       string `json:"avg"`
+	Vol       string `jso
