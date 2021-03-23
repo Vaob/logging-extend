@@ -43,4 +43,5 @@ type Ticker struct {
 	Low       string `json:"low"`
 	Avg       string `json:"avg"`
 	Vol       string `json:"vol"`
-	VolCurr   string
+	VolCurr   string `json:"vol_curr"`
+	Up
