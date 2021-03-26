@@ -47,4 +47,5 @@ type Ticker struct {
 	Updated   int64  `json:"updated"`
 }
 
-type Data inte
+type Data interface {
+	CanParseJson
