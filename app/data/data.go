@@ -44,4 +44,7 @@ type Ticker struct {
 	Avg       string `json:"avg"`
 	Vol       string `json:"vol"`
 	VolCurr   string `json:"vol_curr"`
-	Updated   int64  `jso
+	Updated   int64  `json:"updated"`
+}
+
+t
