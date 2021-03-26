@@ -47,4 +47,4 @@ type Ticker struct {
 	Updated   int64  `json:"updated"`
 }
 
-t
+type Data inte
