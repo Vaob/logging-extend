@@ -48,4 +48,5 @@ type Ticker struct {
 }
 
 type Data interface {
-	CanParseJson
+	CanParseJson()
+	Read(string) e
