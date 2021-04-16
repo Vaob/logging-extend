@@ -50,4 +50,7 @@ type Ticker struct {
 type Data interface {
 	CanParseJson()
 	Read(string) error
-	Write(string)
+	Write(string) error
+}
+
+func (t *Ticker
