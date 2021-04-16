@@ -53,4 +53,4 @@ type Data interface {
 	Write(string) error
 }
 
-func (t *Ticker
+func (t *Ticker) ParseJson(buf []byte) err
