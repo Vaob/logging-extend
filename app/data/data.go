@@ -56,4 +56,7 @@ type Data interface {
 func (t *Ticker) ParseJson(buf []byte) error {
 	err := json.Unmarshal(buf, t)
 	if err != nil {
-		r
+		return err
+	}
+	return nil
+}
