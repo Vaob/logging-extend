@@ -54,4 +54,4 @@ type Data interface {
 }
 
 func (t *Ticker) ParseJson(buf []byte) error {
-	err := json.
+	err := json.Unmarshal(buf, t)
