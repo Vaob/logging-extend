@@ -62,4 +62,5 @@ func (t *Ticker) ParseJson(buf []byte) error {
 }
 
 func (t *Ticker) ParseJsonTickers(buf []byte, pair string) error {
-	var tickers map
+	var tickers map[string]json.RawMessage
+	err :
