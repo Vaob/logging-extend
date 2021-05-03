@@ -61,4 +61,4 @@ func (t *Ticker) ParseJson(buf []byte) error {
 	return nil
 }
 
-func (t *Ticker) Parse
+func (t *Ticker) ParseJsonTickers(buf []byte, pair string)
