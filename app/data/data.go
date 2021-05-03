@@ -61,4 +61,5 @@ func (t *Ticker) ParseJson(buf []byte) error {
 	return nil
 }
 
-func (t *Ticker) ParseJsonTickers(buf []byte, pair string)
+func (t *Ticker) ParseJsonTickers(buf []byte, pair string) error {
+	var tickers map
