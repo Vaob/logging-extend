@@ -65,4 +65,6 @@ func (t *Ticker) ParseJsonTickers(buf []byte, pair string) error {
 	var tickers map[string]json.RawMessage
 	err := json.Unmarshal(buf, &tickers)
 	if err != nil {
-		r
+		return err
+	}
+	err = json.U
