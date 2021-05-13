@@ -67,4 +67,4 @@ func (t *Ticker) ParseJsonTickers(buf []byte, pair string) error {
 	if err != nil {
 		return err
 	}
-	err = json.U
+	err = json.Unmarshal(tickers[pai
