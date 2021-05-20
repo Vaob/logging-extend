@@ -75,4 +75,5 @@ func (t *Ticker) ParseJsonTickers(buf []byte, pair string) error {
 }
 
 func (c *Candle) CanParseJson()  {}
-func (c *Candles) 
+func (c *Candles) CanParseJson() {}
+func (t *Tr
