@@ -79,4 +79,4 @@ func (c *Candles) CanParseJson() {}
 func (t *Trade) CanParseJson()   {}
 func (t *Trades) CanParseJson()  {}
 
-func P
+func ParseJson(d Data, buf
