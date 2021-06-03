@@ -79,4 +79,5 @@ func (c *Candles) CanParseJson() {}
 func (t *Trade) CanParseJson()   {}
 func (t *Trades) CanParseJson()  {}
 
-func ParseJson(d Data, buf
+func ParseJson(d Data, buf []byte) error {
+	err 
