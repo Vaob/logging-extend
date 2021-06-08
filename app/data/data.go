@@ -80,4 +80,4 @@ func (t *Trade) CanParseJson()   {}
 func (t *Trades) CanParseJson()  {}
 
 func ParseJson(d Data, buf []byte) error {
-	err 
+	err := json.Unmarshal(buf, d)
