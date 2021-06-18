@@ -87,3 +87,4 @@ func ParseJson(d Data, buf []byte) error {
 	return nil
 }
 
+func (c *Candl
