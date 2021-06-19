@@ -87,4 +87,5 @@ func ParseJson(d Data, buf []byte) error {
 	return nil
 }
 
-func (c *Candle) ParseString(input []strin
+func (c *Candle) ParseString(input []string) error {
+	var err err
