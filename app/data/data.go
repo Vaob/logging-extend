@@ -88,4 +88,5 @@ func ParseJson(d Data, buf []byte) error {
 }
 
 func (c *Candle) ParseString(input []string) error {
-	var err err
+	var err error
+	c.Time, err = st
