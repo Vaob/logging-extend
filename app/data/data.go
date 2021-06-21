@@ -89,4 +89,4 @@ func ParseJson(d Data, buf []byte) error {
 
 func (c *Candle) ParseString(input []string) error {
 	var err error
-	c.Time, err = st
+	c.Time, err = strconv.ParseInt(input[0], 10, 64)
