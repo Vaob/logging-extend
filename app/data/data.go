@@ -97,4 +97,4 @@ func (c *Candle) ParseString(input []string) error {
 	if err != nil {
 		return err
 	}
-	
+	c.Close, err = strconv.Par
