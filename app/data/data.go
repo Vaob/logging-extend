@@ -102,3 +102,5 @@ func (c *Candle) ParseString(input []string) error {
 		return err
 	}
 	c.High, err = strconv.ParseFloat(input[3], 64)
+	if err != nil {
+		retur
