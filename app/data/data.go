@@ -105,4 +105,4 @@ func (c *Candle) ParseString(input []string) error {
 	if err != nil {
 		return err
 	}
-	c.Low
+	c.Low, err = strconv.Parse
