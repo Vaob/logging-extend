@@ -105,4 +105,5 @@ func (c *Candle) ParseString(input []string) error {
 	if err != nil {
 		return err
 	}
-	c.Low, err = strconv.ParseFloat(input[4],
+	c.Low, err = strconv.ParseFloat(input[4], 64)
+	if err != nil {
