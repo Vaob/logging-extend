@@ -113,4 +113,7 @@ func (c *Candle) ParseString(input []string) error {
 	if err != nil {
 		return err
 	}
-	retu
+	return nil
+}
+
+func (t 
