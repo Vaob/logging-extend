@@ -116,4 +116,4 @@ func (c *Candle) ParseString(input []string) error {
 	return nil
 }
 
-func (t *Trade) ParseString(i
+func (t *Trade) ParseString(input []string) error {
