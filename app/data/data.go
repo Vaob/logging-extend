@@ -117,3 +117,5 @@ func (c *Candle) ParseString(input []string) error {
 }
 
 func (t *Trade) ParseString(input []string) error {
+	var err error
+	t.Id,
