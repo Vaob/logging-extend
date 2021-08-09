@@ -118,4 +118,5 @@ func (c *Candle) ParseString(input []string) error {
 
 func (t *Trade) ParseString(input []string) error {
 	var err error
-	t.Id, err = strconv.ParseInt(input[
+	t.Id, err = strconv.ParseInt(input[0], 10, 64)
+	if err != nil {
