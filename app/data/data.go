@@ -122,4 +122,5 @@ func (t *Trade) ParseString(input []string) error {
 	if err != nil {
 		return err
 	}
-	t.Action = inp
+	t.Action = input[1]
+	t.Quantity, err =
