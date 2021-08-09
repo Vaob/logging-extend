@@ -123,4 +123,4 @@ func (t *Trade) ParseString(input []string) error {
 		return err
 	}
 	t.Action = input[1]
-	t.Quantity, err =
+	t.Quantity, err = strconv.ParseFloat(input[2]
