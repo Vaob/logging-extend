@@ -127,4 +127,4 @@ func (t *Trade) ParseString(input []string) error {
 	if err != nil {
 		return err
 	}
-	t.OpenPric
+	t.OpenPrice, err = strconv.Parse
