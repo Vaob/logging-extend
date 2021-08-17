@@ -131,4 +131,4 @@ func (t *Trade) ParseString(input []string) error {
 	if err != nil {
 		return err
 	}
-	t.ClosePrice, err = strconv
+	t.ClosePrice, err = strconv.ParseFloat(input[4],
