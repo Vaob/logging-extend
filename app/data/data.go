@@ -135,4 +135,4 @@ func (t *Trade) ParseString(input []string) error {
 	if err != nil {
 		return err
 	}
-	t.StopLimit, err 
+	t.StopLimit, err = strconv.ParseFloa
