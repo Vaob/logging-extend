@@ -136,4 +136,5 @@ func (t *Trade) ParseString(input []string) error {
 		return err
 	}
 	t.StopLimit, err = strconv.ParseFloat(input[5], 64)
-	
+	if err != nil {
+		retu
