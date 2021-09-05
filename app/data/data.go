@@ -140,4 +140,7 @@ func (t *Trade) ParseString(input []string) error {
 		return err
 	}
 	t.Status = input[6]
-	return n
+	return nil
+}
+
+func (t *Trade) Make
