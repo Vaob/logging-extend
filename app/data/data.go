@@ -139,4 +139,5 @@ func (t *Trade) ParseString(input []string) error {
 	if err != nil {
 		return err
 	}
-	t.Status = in
+	t.Status = input[6]
+	return n
