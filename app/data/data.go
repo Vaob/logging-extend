@@ -143,4 +143,5 @@ func (t *Trade) ParseString(input []string) error {
 	return nil
 }
 
-func (t *Trade) Make
+func (t *Trade) MakeString() []string {
+	
