@@ -144,4 +144,5 @@ func (t *Trade) ParseString(input []string) error {
 }
 
 func (t *Trade) MakeString() []string {
-	output := make([]string
+	output := make([]string, 7)
+	output[0] =
