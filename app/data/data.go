@@ -146,4 +146,4 @@ func (t *Trade) ParseString(input []string) error {
 func (t *Trade) MakeString() []string {
 	output := make([]string, 7)
 	output[0] = fmt.Sprintf("%d", t.Id)
-	ou
+	output[1] = t.Actio
