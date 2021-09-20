@@ -147,4 +147,4 @@ func (t *Trade) MakeString() []string {
 	output := make([]string, 7)
 	output[0] = fmt.Sprintf("%d", t.Id)
 	output[1] = t.Action
-	output[2] = fmt.Spri
+	output[2] = fmt.Sprintf("%f", t.Quantity
