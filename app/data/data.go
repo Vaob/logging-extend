@@ -148,4 +148,4 @@ func (t *Trade) MakeString() []string {
 	output[0] = fmt.Sprintf("%d", t.Id)
 	output[1] = t.Action
 	output[2] = fmt.Sprintf("%f", t.Quantity)
-	output[3] = f
+	output[3] = fmt.Sprintf("%f",
