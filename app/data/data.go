@@ -155,4 +155,4 @@ func (t *Trade) MakeString() []string {
 	return output
 }
 
-func (c *Candle
+func (c *Candle) MakeString() []string
