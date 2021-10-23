@@ -157,4 +157,4 @@ func (t *Trade) MakeString() []string {
 
 func (c *Candle) MakeString() []string {
 	output := make([]string, 6)
-	output[0] = fmt.S
+	output[0] = fmt.Sprintf("%d", c.Time
