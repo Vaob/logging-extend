@@ -154,3 +154,5 @@ func (t *Trade) MakeString() []string {
 	output[6] = t.Status
 	return output
 }
+
+func (c *Candle
