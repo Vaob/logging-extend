@@ -156,4 +156,5 @@ func (t *Trade) MakeString() []string {
 }
 
 func (c *Candle) MakeString() []string {
-	output := make([]str
+	output := make([]string, 6)
+	output[0] = fmt.S
