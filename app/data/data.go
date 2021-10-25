@@ -161,3 +161,4 @@ func (c *Candle) MakeString() []string {
 	output[1] = fmt.Sprintf("%f", c.Open)
 	output[2] = fmt.Sprintf("%f", c.Close)
 	output[3] = fmt.Sprintf("%f", c.High)
+	output[4] = fmt.Sprintf("%
