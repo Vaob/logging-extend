@@ -159,4 +159,4 @@ func (c *Candle) MakeString() []string {
 	output := make([]string, 6)
 	output[0] = fmt.Sprintf("%d", c.Time)
 	output[1] = fmt.Sprintf("%f", c.Open)
-	output[2] = fmt.Sprint
+	output[2] = fmt.Sprintf("%f", c.Clos
