@@ -166,4 +166,4 @@ func (c *Candle) MakeString() []string {
 	return output
 }
 
-func (c *Candles) Re
+func (c *Candles) Read(fileName string) erro
