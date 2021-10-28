@@ -168,4 +168,5 @@ func (c *Candle) MakeString() []string {
 
 func (c *Candles) Read(fileName string) error {
 
-	f, err := os.Open(f
+	f, err := os.Open(fileName)
+	if err != n
