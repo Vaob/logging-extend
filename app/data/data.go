@@ -176,4 +176,4 @@ func (c *Candles) Read(fileName string) error {
 	defer f.Close()
 	r := csv.NewReader(f)
 
-	r
+	records, err := r.Read
