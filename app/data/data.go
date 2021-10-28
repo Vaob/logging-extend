@@ -173,3 +173,5 @@ func (c *Candles) Read(fileName string) error {
 		return err
 	}
 
+	defer f.Close()
+	r := 
