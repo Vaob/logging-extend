@@ -166,4 +166,6 @@ func (c *Candle) MakeString() []string {
 	return output
 }
 
-func (c *Candles) Read(fileName string) erro
+func (c *Candles) Read(fileName string) error {
+
+	f, err := os.Open(f
