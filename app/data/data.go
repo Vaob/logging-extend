@@ -180,4 +180,4 @@ func (c *Candles) Read(fileName string) error {
 	if err != nil {
 		return err
 	}
-	for
+	for i := range rec
