@@ -182,4 +182,4 @@ func (c *Candles) Read(fileName string) error {
 	}
 	for i := range records {
 		candle := &Candle{}
-		err := candle.
+		err := candle.ParseString(recor
