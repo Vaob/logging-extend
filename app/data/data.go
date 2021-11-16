@@ -184,4 +184,6 @@ func (c *Candles) Read(fileName string) error {
 		candle := &Candle{}
 		err := candle.ParseString(records[i])
 		if err != nil {
-		
+			return err
+		}
+		c.
