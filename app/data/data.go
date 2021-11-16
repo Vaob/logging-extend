@@ -181,4 +181,5 @@ func (c *Candles) Read(fileName string) error {
 		return err
 	}
 	for i := range records {
-		candle := &Cand
+		candle := &Candle{}
+		err := candle.
