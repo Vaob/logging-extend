@@ -188,4 +188,7 @@ func (c *Candles) Read(fileName string) error {
 		}
 		c.Array = append(c.Array, *candle)
 	}
-	return
+	return nil
+}
+
+func (c
