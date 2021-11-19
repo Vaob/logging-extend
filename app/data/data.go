@@ -191,4 +191,4 @@ func (c *Candles) Read(fileName string) error {
 	return nil
 }
 
-func (c
+func (c *Candle) Read(file
