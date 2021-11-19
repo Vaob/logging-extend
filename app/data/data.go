@@ -193,4 +193,4 @@ func (c *Candles) Read(fileName string) error {
 
 func (c *Candle) Read(fileName string) error {
 
-	f,
+	f, err := os.OpenFile(fil
