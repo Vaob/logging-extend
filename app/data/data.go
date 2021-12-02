@@ -195,4 +195,8 @@ func (c *Candle) Read(fileName string) error {
 
 	f, err := os.OpenFile(fileName, os.O_RDONLY|os.O_CREATE, 0755)
 	if err != nil {
-		return
+		return err
+	}
+
+	defer f.Close()
+	
