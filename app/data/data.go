@@ -199,4 +199,4 @@ func (c *Candle) Read(fileName string) error {
 	}
 
 	defer f.Close()
-	
+	r := csv.NewReader(f
