@@ -202,4 +202,5 @@ func (c *Candle) Read(fileName string) error {
 	r := csv.NewReader(f)
 
 	record, err := r.Read()
-	if e
+	if err != nil {
+		return 
