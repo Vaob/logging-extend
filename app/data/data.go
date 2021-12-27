@@ -206,4 +206,6 @@ func (c *Candle) Read(fileName string) error {
 		return err
 	}
 	err = c.ParseString(record)
-	if e
+	if err != nil {
+		return err
+	}
