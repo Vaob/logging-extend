@@ -213,4 +213,4 @@ func (c *Candle) Read(fileName string) error {
 	return nil
 }
 
-func (t
+func (t *Trades) Read(fileName str
