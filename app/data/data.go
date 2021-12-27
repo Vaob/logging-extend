@@ -209,3 +209,8 @@ func (c *Candle) Read(fileName string) error {
 	if err != nil {
 		return err
 	}
+
+	return nil
+}
+
+func (t
