@@ -221,4 +221,6 @@ func (t *Trades) Read(fileName string) error {
 	}
 
 	defer f.Close()
-	r 
+	r := csv.NewReader(f)
+
+	records
