@@ -217,4 +217,8 @@ func (t *Trades) Read(fileName string) error {
 
 	f, err := os.Open(fileName)
 	if err != nil {
-		return
+		return err
+	}
+
+	defer f.Close()
+	r 
