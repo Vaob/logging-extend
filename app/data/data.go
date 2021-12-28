@@ -216,4 +216,5 @@ func (c *Candle) Read(fileName string) error {
 func (t *Trades) Read(fileName string) error {
 
 	f, err := os.Open(fileName)
-	if 
+	if err != nil {
+		return
