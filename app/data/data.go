@@ -227,4 +227,5 @@ func (t *Trades) Read(fileName string) error {
 	if err != nil {
 		return err
 	}
-	for i
+	for i := range records {
+		trade 
