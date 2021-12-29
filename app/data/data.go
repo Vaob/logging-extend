@@ -224,4 +224,7 @@ func (t *Trades) Read(fileName string) error {
 	r := csv.NewReader(f)
 
 	records, err := r.ReadAll()
-	if err != nil
+	if err != nil {
+		return err
+	}
+	for i
