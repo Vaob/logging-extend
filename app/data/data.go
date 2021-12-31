@@ -231,3 +231,4 @@ func (t *Trades) Read(fileName string) error {
 		trade := &Trade{}
 		err := trade.ParseString(records[i])
 		if err != nil {
+			return err
