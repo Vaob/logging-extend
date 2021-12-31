@@ -232,3 +232,5 @@ func (t *Trades) Read(fileName string) error {
 		err := trade.ParseString(records[i])
 		if err != nil {
 			return err
+		}
+		t.Array = append(t.Array
