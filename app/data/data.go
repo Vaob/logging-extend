@@ -229,4 +229,4 @@ func (t *Trades) Read(fileName string) error {
 	}
 	for i := range records {
 		trade := &Trade{}
-		
+		err := trade.ParseString(records[i
