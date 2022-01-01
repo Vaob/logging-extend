@@ -233,4 +233,6 @@ func (t *Trades) Read(fileName string) error {
 		if err != nil {
 			return err
 		}
-		t.Array = append(t.Array
+		t.Array = append(t.Array, *trade)
+	}
+	return nil
