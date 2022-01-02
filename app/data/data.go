@@ -238,4 +238,4 @@ func (t *Trades) Read(fileName string) error {
 	return nil
 }
 
-func (t *Trade) 
+func (t *Trade) Read(fileName string) error {
