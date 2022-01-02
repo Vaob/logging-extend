@@ -236,3 +236,6 @@ func (t *Trades) Read(fileName string) error {
 		t.Array = append(t.Array, *trade)
 	}
 	return nil
+}
+
+func (t *Trade) 
