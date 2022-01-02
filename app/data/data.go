@@ -239,3 +239,5 @@ func (t *Trades) Read(fileName string) error {
 }
 
 func (t *Trade) Read(fileName string) error {
+
+	f, err := os.OpenFile(fi
