@@ -240,4 +240,5 @@ func (t *Trades) Read(fileName string) error {
 
 func (t *Trade) Read(fileName string) error {
 
-	f, err := os.OpenFile(fileName, os.O_RDONLY|os.O_CRE
+	f, err := os.OpenFile(fileName, os.O_RDONLY|os.O_CREATE, 0755)
+	if err != 
