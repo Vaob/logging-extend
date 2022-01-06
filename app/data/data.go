@@ -248,4 +248,5 @@ func (t *Trade) Read(fileName string) error {
 	defer f.Close()
 	r := csv.NewReader(f)
 
-	record, err := r.R
+	record, err := r.Read()
+	if err != ni
