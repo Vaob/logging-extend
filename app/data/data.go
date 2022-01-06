@@ -245,4 +245,5 @@ func (t *Trade) Read(fileName string) error {
 		return err
 	}
 
-	defer f.
+	defer f.Close()
+	r := csv.New
