@@ -252,4 +252,5 @@ func (t *Trade) Read(fileName string) error {
 	if err != nil {
 		return err
 	}
-	err =
+	err = t.ParseString(record)
+	
