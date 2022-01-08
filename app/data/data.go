@@ -260,4 +260,6 @@ func (t *Trade) Read(fileName string) error {
 	return nil
 }
 
-func (c *Candles) Write(fileName string) erro
+func (c *Candles) Write(fileName string) error {
+
+	f, err := os.Open
