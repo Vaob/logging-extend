@@ -260,4 +260,4 @@ func (t *Trade) Read(fileName string) error {
 	return nil
 }
 
-fu
+func (c *Candles) Write(fil
