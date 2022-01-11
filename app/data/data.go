@@ -267,4 +267,6 @@ func (c *Candles) Write(fileName string) error {
 		return err
 	}
 
-	defer 
+	defer f.Close()
+
+	w := c
