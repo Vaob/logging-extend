@@ -269,4 +269,6 @@ func (c *Candles) Write(fileName string) error {
 
 	defer f.Close()
 
-	w := c
+	w := csv.NewWriter(f)
+
+	defer
