@@ -273,4 +273,5 @@ func (c *Candles) Write(fileName string) error {
 
 	defer w.Flush()
 
-	fo
+	for i := range c.Array {
+		err := w
