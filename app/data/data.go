@@ -274,4 +274,4 @@ func (c *Candles) Write(fileName string) error {
 	defer w.Flush()
 
 	for i := range c.Array {
-		err := w
+		err := w.Write(c.Array[i].Make
