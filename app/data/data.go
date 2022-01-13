@@ -275,4 +275,6 @@ func (c *Candles) Write(fileName string) error {
 
 	for i := range c.Array {
 		err := w.Write(c.Array[i].MakeString())
-		if err !=
+		if err != nil {
+			return err
+	
