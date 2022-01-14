@@ -282,4 +282,6 @@ func (c *Candles) Write(fileName string) error {
 	return nil
 }
 
-func (c *Candle) Write(fi
+func (c *Candle) Write(fileName string) error {
+
+	
