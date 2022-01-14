@@ -284,4 +284,4 @@ func (c *Candles) Write(fileName string) error {
 
 func (c *Candle) Write(fileName string) error {
 
-	
+	f, err := os.OpenFile(fi
