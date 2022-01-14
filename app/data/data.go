@@ -277,4 +277,8 @@ func (c *Candles) Write(fileName string) error {
 		err := w.Write(c.Array[i].MakeString())
 		if err != nil {
 			return err
-	
+		}
+	}
+	return nil
+}
+
