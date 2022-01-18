@@ -295,4 +295,5 @@ func (c *Candle) Write(fileName string) error {
 
 	defer w.Flush()
 
-	err = w.Write(
+	err = w.Write(c.MakeString())
+	if err 
