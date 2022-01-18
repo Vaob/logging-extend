@@ -289,4 +289,6 @@ func (c *Candle) Write(fileName string) error {
 		return err
 	}
 
-	defer f.Clo
+	defer f.Close()
+
+	w := csv.NewWri
