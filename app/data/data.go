@@ -293,4 +293,6 @@ func (c *Candle) Write(fileName string) error {
 
 	w := csv.NewWriter(f)
 
-	defer w.Flush
+	defer w.Flush()
+
+	err = w.Write(
