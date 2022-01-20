@@ -302,4 +302,4 @@ func (c *Candle) Write(fileName string) error {
 	return nil
 }
 
-func (t *Trades) 
+func (t *Trades) Write(fileName strin
