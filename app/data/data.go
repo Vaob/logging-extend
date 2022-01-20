@@ -300,3 +300,6 @@ func (c *Candle) Write(fileName string) error {
 		return err
 	}
 	return nil
+}
+
+func (t *Trades) 
