@@ -305,4 +305,6 @@ func (c *Candle) Write(fileName string) error {
 func (t *Trades) Write(fileName string) error {
 
 	f, err := os.OpenFile(fileName, os.O_WRONLY|os.O_APPEND|os.O_CREATE, 0755)
-	if 
+	if err != nil {
+		return err
+	}
