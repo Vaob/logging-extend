@@ -311,4 +311,6 @@ func (t *Trades) Write(fileName string) error {
 
 	defer f.Close()
 
-	w :
+	w := csv.NewWriter(f)
+
+	defer w
