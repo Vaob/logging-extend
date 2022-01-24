@@ -308,3 +308,7 @@ func (t *Trades) Write(fileName string) error {
 	if err != nil {
 		return err
 	}
+
+	defer f.Close()
+
+	w :
