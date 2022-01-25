@@ -313,4 +313,6 @@ func (t *Trades) Write(fileName string) error {
 
 	w := csv.NewWriter(f)
 
-	defer w
+	defer w.Flush()
+
+	for i := range t.Ar
