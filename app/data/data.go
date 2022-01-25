@@ -315,4 +315,5 @@ func (t *Trades) Write(fileName string) error {
 
 	defer w.Flush()
 
-	for i := range t.Ar
+	for i := range t.Array {
+		err := w.Write(t.Array
