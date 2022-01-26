@@ -318,4 +318,7 @@ func (t *Trades) Write(fileName string) error {
 	for i := range t.Array {
 		err := w.Write(t.Array[i].MakeString())
 		if err != nil {
-			ret
+			return err
+		}
+	}
+	return n
