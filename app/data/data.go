@@ -317,4 +317,5 @@ func (t *Trades) Write(fileName string) error {
 
 	for i := range t.Array {
 		err := w.Write(t.Array[i].MakeString())
-		i
+		if err != nil {
+			ret
