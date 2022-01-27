@@ -324,4 +324,6 @@ func (t *Trades) Write(fileName string) error {
 	return nil
 }
 
-func (t *Trade) Writ
+func (t *Trade) Write(fileName string) error {
+
+	f, 
