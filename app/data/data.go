@@ -321,4 +321,7 @@ func (t *Trades) Write(fileName string) error {
 			return err
 		}
 	}
-	return n
+	return nil
+}
+
+func (t *Trade) Writ
