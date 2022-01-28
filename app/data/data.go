@@ -326,4 +326,4 @@ func (t *Trades) Write(fileName string) error {
 
 func (t *Trade) Write(fileName string) error {
 
-	f, 
+	f, err := os.OpenFile(
