@@ -328,4 +328,7 @@ func (t *Trade) Write(fileName string) error {
 
 	f, err := os.OpenFile(fileName, os.O_WRONLY|os.O_APPEND|os.O_CREATE, 0755)
 	if err != nil {
-		
+		return err
+	}
+
+	defer
