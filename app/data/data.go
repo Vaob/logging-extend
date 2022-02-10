@@ -331,4 +331,6 @@ func (t *Trade) Write(fileName string) error {
 		return err
 	}
 
-	defer
+	defer f.Close()
+
+	w := csv
