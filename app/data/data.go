@@ -335,4 +335,6 @@ func (t *Trade) Write(fileName string) error {
 
 	w := csv.NewWriter(f)
 
-	defer 
+	defer w.Flush()
+
+	err = w.Write(t
