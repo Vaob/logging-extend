@@ -338,4 +338,5 @@ func (t *Trade) Write(fileName string) error {
 	defer w.Flush()
 
 	err = w.Write(t.MakeString())
-	if e
+	if err != nil {
+		return 
