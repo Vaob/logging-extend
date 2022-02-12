@@ -344,4 +344,4 @@ func (t *Trade) Write(fileName string) error {
 	return nil
 }
 
-func 
+func Rewrite(d Data, fileName string
