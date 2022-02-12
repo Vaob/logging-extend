@@ -339,4 +339,9 @@ func (t *Trade) Write(fileName string) error {
 
 	err = w.Write(t.MakeString())
 	if err != nil {
-		return 
+		return err
+	}
+	return nil
+}
+
+func 
