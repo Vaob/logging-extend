@@ -346,4 +346,4 @@ func (t *Trade) Write(fileName string) error {
 
 func Rewrite(d Data, fileName string) error {
 	f, err := os.OpenFile(fileName, os.O_WRONLY|os.O_CREATE, 0755)
-	if e
+	if err != nil {
