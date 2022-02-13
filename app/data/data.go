@@ -345,4 +345,4 @@ func (t *Trade) Write(fileName string) error {
 }
 
 func Rewrite(d Data, fileName string) error {
-	f, err := os.O
+	f, err := os.OpenFile(fileName, os.O
