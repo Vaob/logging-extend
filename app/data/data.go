@@ -350,4 +350,5 @@ func Rewrite(d Data, fileName string) error {
 		return err
 	}
 
-	defe
+	defer f.Close()
+	err = f.Tru
