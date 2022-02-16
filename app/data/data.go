@@ -352,4 +352,8 @@ func Rewrite(d Data, fileName string) error {
 
 	defer f.Close()
 	err = f.Truncate(0)
-	if err != nil 
+	if err != nil {
+		return err
+	}
+
+	err
