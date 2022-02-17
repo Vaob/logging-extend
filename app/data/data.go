@@ -356,4 +356,4 @@ func Rewrite(d Data, fileName string) error {
 		return err
 	}
 
-	err
+	err = d.Write(fileName)
