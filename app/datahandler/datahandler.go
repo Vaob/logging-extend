@@ -3,4 +3,5 @@ package datahandler //datahandler is autonomic microservice loading and updating
 
 import (
 	"exmo-trading/app/data"
-	"exmo-
+	"exmo-trading/app/query"
+	"fmt
