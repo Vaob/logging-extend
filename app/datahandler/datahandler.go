@@ -4,4 +4,6 @@ package datahandler //datahandler is autonomic microservice loading and updating
 import (
 	"exmo-trading/app/data"
 	"exmo-trading/app/query"
-	"fmt
+	"fmt"
+	"io/ioutil"
+	
