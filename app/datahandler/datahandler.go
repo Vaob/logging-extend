@@ -10,4 +10,5 @@ import (
 	"time"
 )
 
-type Handler st
+type Handler struct {
+	Symbol       
