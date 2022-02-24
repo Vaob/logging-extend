@@ -11,4 +11,4 @@ import (
 )
 
 type Handler struct {
-	Symbol       
+	Symbol            string        `yaml:
