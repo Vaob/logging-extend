@@ -12,4 +12,5 @@ import (
 
 type Handler struct {
 	Symbol            string        `yaml:"Symbol"`
-	Resolution        int64         `yaml:"Reso
+	Resolution        int64         `yaml:"Resolution"`
+	CandlesFile     
