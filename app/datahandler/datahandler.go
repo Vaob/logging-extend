@@ -14,4 +14,5 @@ type Handler struct {
 	Symbol            string        `yaml:"Symbol"`
 	Resolution        int64         `yaml:"Resolution"`
 	CandlesFile       string        `yaml:"CandlesFile"`
-	CandlesVolume     int64         `yaml
+	CandlesVolume     int64         `yaml:"CandlesVolume"`
+	D
