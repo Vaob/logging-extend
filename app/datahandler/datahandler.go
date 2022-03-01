@@ -15,4 +15,7 @@ type Handler struct {
 	Resolution        int64         `yaml:"Resolution"`
 	CandlesFile       string        `yaml:"CandlesFile"`
 	CandlesVolume     int64         `yaml:"CandlesVolume"`
-	DataHandlerTimeout time.Duration `yaml:"DataHandlerT
+	DataHandlerTimeout time.Duration `yaml:"DataHandlerTimeout"`
+}
+
+fun
