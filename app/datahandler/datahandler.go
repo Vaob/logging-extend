@@ -18,4 +18,6 @@ type Handler struct {
 	DataHandlerTimeout time.Duration `yaml:"DataHandlerTimeout"`
 }
 
-func (h *Handler) Noth
+func (h *Handler) Nothing() {}
+
+func (h
