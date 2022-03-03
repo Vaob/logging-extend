@@ -20,4 +20,4 @@ type Handler struct {
 
 func (h *Handler) Nothing() {}
 
-func (h
+func (h *Handler) LoadCa
