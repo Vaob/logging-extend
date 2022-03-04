@@ -21,4 +21,4 @@ type Handler struct {
 func (h *Handler) Nothing() {}
 
 func (h *Handler) LoadCandles(from, to string) error {
-	stringRes
+	stringResolution := fmt.Sprintf(
