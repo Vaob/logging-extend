@@ -22,4 +22,4 @@ func (h *Handler) Nothing() {}
 
 func (h *Handler) LoadCandles(from, to string) error {
 	stringResolution := fmt.Sprintf("%d", h.Resolution)
-	q := query.GetQuery{Method: "cand
+	q := query.GetQuery{Method: "candles_history?symbol="
