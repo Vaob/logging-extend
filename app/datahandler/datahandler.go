@@ -27,4 +27,7 @@ func (h *Handler) LoadCandles(from, to string) error {
 
 	resp, err := query.Exec(&q)
 	if err != nil {
-		re
+		return err
+	}
+
+	body,
