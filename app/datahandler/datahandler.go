@@ -26,4 +26,5 @@ func (h *Handler) LoadCandles(from, to string) error {
 		"&resolution=" + stringResolution + "&from=" + from + "&to=" + to}
 
 	resp, err := query.Exec(&q)
-	
+	if err != nil {
+		re
