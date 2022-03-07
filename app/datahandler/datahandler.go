@@ -25,4 +25,5 @@ func (h *Handler) LoadCandles(from, to string) error {
 	q := query.GetQuery{Method: "candles_history?symbol=" + h.Symbol +
 		"&resolution=" + stringResolution + "&from=" + from + "&to=" + to}
 
-	resp, er
+	resp, err := query.Exec(&q)
+	
