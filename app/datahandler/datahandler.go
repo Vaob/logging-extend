@@ -30,4 +30,5 @@ func (h *Handler) LoadCandles(from, to string) error {
 		return err
 	}
 
-	body, err := ioutil.ReadAl
+	body, err := ioutil.ReadAll(resp.Body)
+	if er
