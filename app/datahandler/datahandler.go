@@ -32,4 +32,7 @@ func (h *Handler) LoadCandles(from, to string) error {
 
 	body, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
-		return 
+		return err
+	}
+
+	defer resp.Body.Close
