@@ -37,4 +37,5 @@ func (h *Handler) LoadCandles(from, to string) error {
 
 	defer resp.Body.Close()
 
-	candles := &d
+	candles := &data.Candles{}
+	candles.Ar
