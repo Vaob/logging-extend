@@ -35,4 +35,6 @@ func (h *Handler) LoadCandles(from, to string) error {
 		return err
 	}
 
-	defer resp.Body.Close
+	defer resp.Body.Close()
+
+	candles := &d
