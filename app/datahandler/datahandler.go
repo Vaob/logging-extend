@@ -38,4 +38,4 @@ func (h *Handler) LoadCandles(from, to string) error {
 	defer resp.Body.Close()
 
 	candles := &data.Candles{}
-	candles.Array = make([]data.Candle,
+	candles.Array = make([]data.Candle, 0, h.CandlesVolume)
