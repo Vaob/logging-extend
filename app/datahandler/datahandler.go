@@ -43,4 +43,6 @@ func (h *Handler) LoadCandles(from, to string) error {
 	err = data.ParseJson(candles, []byte(body))
 	if err != nil {
 		return err
-	
+	}
+
+	if len(candles.Array
