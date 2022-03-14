@@ -41,4 +41,6 @@ func (h *Handler) LoadCandles(from, to string) error {
 	candles.Array = make([]data.Candle, 0, h.CandlesVolume)
 
 	err = data.ParseJson(candles, []byte(body))
-	i
+	if err != nil {
+		return err
+	
