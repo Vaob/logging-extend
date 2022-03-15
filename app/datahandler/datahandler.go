@@ -45,4 +45,5 @@ func (h *Handler) LoadCandles(from, to string) error {
 		return err
 	}
 
-	if len(candles.Array
+	if len(candles.Array) > 0 {
+		err = candles
