@@ -48,4 +48,6 @@ func (h *Handler) LoadCandles(from, to string) error {
 	if len(candles.Array) > 0 {
 		err = candles.Write(h.CandlesFile)
 		if err != nil {
-			
+			return err
+		}
+		fmt.Prin
