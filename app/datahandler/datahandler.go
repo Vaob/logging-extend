@@ -50,4 +50,4 @@ func (h *Handler) LoadCandles(from, to string) error {
 		if err != nil {
 			return err
 		}
-		fmt.Prin
+		fmt.Println("datahandle
