@@ -52,4 +52,7 @@ func (h *Handler) LoadCandles(from, to string) error {
 		}
 		fmt.Println("datahandler: new candles loaded")
 	}
-	return ni
+	return nil
+}
+
+func ClearFil
