@@ -55,4 +55,4 @@ func (h *Handler) LoadCandles(from, to string) error {
 	return nil
 }
 
-func ClearFil
+func ClearFile(fileName string)
