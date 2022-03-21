@@ -56,4 +56,5 @@ func (h *Handler) LoadCandles(from, to string) error {
 }
 
 func ClearFile(fileName string) error {
-	f, err := os.OpenFile(fileName, os.O_WRONLY|o
+	f, err := os.OpenFile(fileName, os.O_WRONLY|os.O_CREATE, 0755)
+	if err != 
