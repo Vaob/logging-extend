@@ -63,4 +63,5 @@ func ClearFile(fileName string) error {
 
 	defer f.Close()
 	err = f.Truncate(0)
-	i
+	if err != nil {
+		ret
