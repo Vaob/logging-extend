@@ -69,3 +69,4 @@ func ClearFile(fileName string) error {
 	return nil
 }
 
+func (h *Handler) 
