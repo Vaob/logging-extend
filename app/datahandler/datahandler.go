@@ -70,4 +70,5 @@ func ClearFile(fileName string) error {
 }
 
 func (h *Handler) InitCandles() error {
-	err := ClearFile(h.CandlesFi
+	err := ClearFile(h.CandlesFile)
+	if err != n
