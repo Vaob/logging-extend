@@ -69,4 +69,5 @@ func ClearFile(fileName string) error {
 	return nil
 }
 
-func (h *Handler) 
+func (h *Handler) InitCandles() error {
+	err :=
