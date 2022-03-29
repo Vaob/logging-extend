@@ -70,4 +70,4 @@ func ClearFile(fileName string) error {
 }
 
 func (h *Handler) InitCandles() error {
-	err :=
+	err := ClearFile(h.CandlesFi
