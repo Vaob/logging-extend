@@ -74,4 +74,6 @@ func (h *Handler) InitCandles() error {
 	if err != nil {
 		return err
 	}
-	t := ti
+	t := time.Now()
+
+	err = h.LoadC
