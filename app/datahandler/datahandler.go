@@ -76,4 +76,4 @@ func (h *Handler) InitCandles() error {
 	}
 	t := time.Now()
 
-	err = h.LoadC
+	err = h.LoadCandles(fmt.Sprintf("%
