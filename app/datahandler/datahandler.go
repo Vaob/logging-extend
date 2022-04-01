@@ -80,4 +80,7 @@ func (h *Handler) InitCandles() error {
 	if err != nil {
 		return err
 	}
-	return ni
+	return nil
+}
+
+func (h *Handler
