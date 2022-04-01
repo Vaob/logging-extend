@@ -76,4 +76,6 @@ func (h *Handler) InitCandles() error {
 	}
 	t := time.Now()
 
-	err = h.LoadCandles(fmt.Sprintf("%d", t.Unix()-60*h.Resolution*h.CandlesVolume-1), fmt.Sprintf("%d", t.Unix()+1
+	err = h.LoadCandles(fmt.Sprintf("%d", t.Unix()-60*h.Resolution*h.CandlesVolume-1), fmt.Sprintf("%d", t.Unix()+1))
+	if err != nil {
+		ret
