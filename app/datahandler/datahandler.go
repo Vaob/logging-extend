@@ -86,4 +86,4 @@ func (h *Handler) InitCandles() error {
 func (h *Handler) Run() {
 	for {
 		err := h.InitCandles()
-		time.Sl
+		time.Sleep(h.DataHandlerTimeou
