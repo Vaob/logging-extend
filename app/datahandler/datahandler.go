@@ -87,4 +87,5 @@ func (h *Handler) Run() {
 	for {
 		err := h.InitCandles()
 		time.Sleep(h.DataHandlerTimeout * time.Second)
-		
+		if err != nil {
+			fmt.
