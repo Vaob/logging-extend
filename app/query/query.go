@@ -66,3 +66,20 @@ func (q *PostQuery) Do() (*http.Response, error) {
 	if err != nil {
 		return nil, err
 	}
+	defer resp.Body.Close()
+	fmt.Println(resp.Body)
+	return resp, nil
+}
+
+func (q *GetQuery) Do() (*http.Response, error) {
+	resp, err := http.Get("https://api.exmo.me/v1.1/" + q.Method)
+	if err != nil {
+		return nil, err
+	}
+
+	return resp, nil
+}
+
+func Exec(q Query) (*http.Response, error) {
+	return q.Do()
+}
