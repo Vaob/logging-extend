@@ -1,1 +1,3 @@
-package si
+package signals
+
+const Long stri
