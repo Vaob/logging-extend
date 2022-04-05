@@ -40,3 +40,29 @@ func (q *PostQuery) PrepareParams() {
 			postParams.Add(key, value)
 		}
 	}
+	q.PreparedParams = postParams.Encode()
+}
+
+func (q *PostQuery) GetSign() {
+	mac := hmac.New(sha512.New, []byte(q.UserParams.SecretKey))
+	mac.Write([]byte(q.PreparedParams))
+	q.Sign = fmt.Sprintf("%x", mac.Sum(nil))
+}
+
+func (q *PostQuery) Do() (*http.Response, error) {
+
+	q.PrepareParams()
+	q.GetSign()
+
+	client := &http.Client{}
+	req, _ := http.NewRequest("POST", "https://api.exmo.me/v1.1/"+q.Method, bytes.NewBuffer([]byte(q.PreparedParams)))
+	req.Header.Set("Key", q.UserParams.PublicKey)
+	req.Header.Set("Sign", q.Sign)
+	req.Header.Add("Content-Type", "application/x-www-form-urlencoded")
+	req.Header.Add("Content-Length", strconv.Itoa(len(q.PreparedParams)))
+	req.Close = true
+
+	resp, err := client.Do(req)
+	if err != nil {
+		return nil, err
+	}
