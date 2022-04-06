@@ -1,4 +1,5 @@
 package signals
 
 const Long string = "long"
-const Short 
+const Short string = "short"
+const NoSignals s
