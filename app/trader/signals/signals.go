@@ -1,3 +1,4 @@
 package signals
 
-const Long stri
+const Long string = "long"
+const Short 
