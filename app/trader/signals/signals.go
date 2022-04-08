@@ -3,4 +3,5 @@ package signals
 const Long string = "long"
 const Short string = "short"
 const NoSignals string = "no"
-const Bull strin
+const Bull string = "bull"
+const Bear st
