@@ -5,4 +5,5 @@ const Short string = "short"
 const NoSignals string = "no"
 const Bull string = "bull"
 const Bear string = "bear"
-const TradeOpened 
+const TradeOpened string = "open"
+const T
