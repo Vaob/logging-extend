@@ -6,4 +6,4 @@ const NoSignals string = "no"
 const Bull string = "bull"
 const Bear string = "bear"
 const TradeOpened string = "open"
-const T
+const TradeClosed st
