@@ -2,4 +2,5 @@ package strategies
 
 import (
 	"exmo-trading/app/data"
-	"exmo-trading
+	"exmo-trading/app/trader/signals"
+	"exm
