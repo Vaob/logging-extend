@@ -1,4 +1,5 @@
 package strategies
 
 import (
-	"exmo-trading/
+	"exmo-trading/app/data"
+	"exmo-trading
