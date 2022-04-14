@@ -5,3 +5,5 @@ import (
 	"exmo-trading/app/trader/signals"
 	"exmo-trading/app/trader/traderutils"
 )
+
+type BollingerBands str
