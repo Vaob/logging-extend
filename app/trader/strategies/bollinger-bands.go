@@ -6,4 +6,4 @@ import (
 	"exmo-trading/app/trader/traderutils"
 )
 
-type BollingerBands str
+type BollingerBands struct { // rsi strategy giv
