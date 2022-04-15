@@ -6,4 +6,4 @@ import (
 	"exmo-trading/app/trader/traderutils"
 )
 
-type BollingerBands struct { // rsi strategy gives long or short signals when r
+type BollingerBands struct { // rsi strategy gives long or short signals when rsi index goes lowe
