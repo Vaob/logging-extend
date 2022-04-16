@@ -9,3 +9,5 @@ import (
 type BollingerBands struct { // rsi strategy gives long or short signals when rsi index goes lower than 30 or higher than 70
 	CandlesFile       string
 	CandlesFileVolume int
+	Period            int
+	Fa
