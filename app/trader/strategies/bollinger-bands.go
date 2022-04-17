@@ -13,4 +13,4 @@ type BollingerBands struct { // rsi strategy gives long or short signals when rs
 	Factor			  int
 }
 
-func (bb *BollingerBands) Se
+func (bb *BollingerBands) Set(candlesFile string, cand
