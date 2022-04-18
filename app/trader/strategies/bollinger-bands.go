@@ -15,3 +15,5 @@ type BollingerBands struct { // rsi strategy gives long or short signals when rs
 
 func (bb *BollingerBands) Set(candlesFile string, candlesFileVolume int) {
 	bb.Period = 40
+	bb.Factor = 2
+	bb.Candle
