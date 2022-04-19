@@ -17,4 +17,4 @@ func (bb *BollingerBands) Set(candlesFile string, candlesFileVolume int) {
 	bb.Period = 40
 	bb.Factor = 2
 	bb.CandlesFile = candlesFile
-	bb.Cand
+	bb.CandlesFileVolume = candlesFileV
