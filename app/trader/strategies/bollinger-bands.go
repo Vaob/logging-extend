@@ -20,4 +20,5 @@ func (bb *BollingerBands) Set(candlesFile string, candlesFileVolume int) {
 	bb.CandlesFileVolume = candlesFileVolume
 }
 
-func (bb *BollingerBands) Solve(c *data.Candles, topborder, bottomborder []float64) 
+func (bb *BollingerBands) Solve(c *data.Candles, topborder, bottomborder []float64) string {
+	length :
