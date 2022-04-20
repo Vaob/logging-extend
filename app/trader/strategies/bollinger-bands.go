@@ -21,4 +21,5 @@ func (bb *BollingerBands) Set(candlesFile string, candlesFileVolume int) {
 }
 
 func (bb *BollingerBands) Solve(c *data.Candles, topborder, bottomborder []float64) string {
-	length :
+	length := len(c.Array)
+	if 
