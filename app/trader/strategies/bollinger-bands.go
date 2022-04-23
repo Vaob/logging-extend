@@ -26,4 +26,4 @@ func (bb *BollingerBands) Solve(c *data.Candles, topborder, bottomborder []float
 		if c.Array[length-1].Close > topborder[length-1] {
 			return signals.Short
 		}
-		if c.Array[length-
+		if c.Array[length-1].Close < bottomborder[leng
