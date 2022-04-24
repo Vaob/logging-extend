@@ -27,4 +27,7 @@ func (bb *BollingerBands) Solve(c *data.Candles, topborder, bottomborder []float
 			return signals.Short
 		}
 		if c.Array[length-1].Close < bottomborder[length-1] {
-			return signals.Lon
+			return signals.Long
+		}
+	}
+	return signa
