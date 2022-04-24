@@ -30,4 +30,7 @@ func (bb *BollingerBands) Solve(c *data.Candles, topborder, bottomborder []float
 			return signals.Long
 		}
 	}
-	return signa
+	return signals.NoSignals
+}
+
+func (b
