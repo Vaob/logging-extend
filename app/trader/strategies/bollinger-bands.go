@@ -33,4 +33,4 @@ func (bb *BollingerBands) Solve(c *data.Candles, topborder, bottomborder []float
 	return signals.NoSignals
 }
 
-func (b
+func (bb *BollingerBands) 
