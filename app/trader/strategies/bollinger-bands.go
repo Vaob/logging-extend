@@ -35,4 +35,4 @@ func (bb *BollingerBands) Solve(c *data.Candles, topborder, bottomborder []float
 
 func (bb *BollingerBands) Analyze() (string, error) {
 	candles := &data.Candles{}
-	candles.A
+	candles.Array = make([]data.Cand
