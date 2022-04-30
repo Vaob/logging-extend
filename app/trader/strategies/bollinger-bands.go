@@ -36,4 +36,5 @@ func (bb *BollingerBands) Solve(c *data.Candles, topborder, bottomborder []float
 func (bb *BollingerBands) Analyze() (string, error) {
 	candles := &data.Candles{}
 	candles.Array = make([]data.Candle, 0, bb.CandlesFileVolume)
-	err := candles.Read(b
+	err := candles.Read(bb.CandlesFile)
+	if
