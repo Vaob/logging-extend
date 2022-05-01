@@ -40,4 +40,4 @@ func (bb *BollingerBands) Analyze() (string, error) {
 	if err != nil {
 		return signals.NoSignals, err
 	}
-	priceArray :
+	priceArray := traderutils.GetArra
