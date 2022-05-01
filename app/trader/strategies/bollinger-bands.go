@@ -37,4 +37,5 @@ func (bb *BollingerBands) Analyze() (string, error) {
 	candles := &data.Candles{}
 	candles.Array = make([]data.Candle, 0, bb.CandlesFileVolume)
 	err := candles.Read(bb.CandlesFile)
-	if
+	if err != nil {
+		
