@@ -38,4 +38,6 @@ func (bb *BollingerBands) Analyze() (string, error) {
 	candles.Array = make([]data.Candle, 0, bb.CandlesFileVolume)
 	err := candles.Read(bb.CandlesFile)
 	if err != nil {
-		return signals.NoSign
+		return signals.NoSignals, err
+	}
+	priceArray :
