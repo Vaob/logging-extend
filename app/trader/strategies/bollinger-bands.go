@@ -41,4 +41,4 @@ func (bb *BollingerBands) Analyze() (string, error) {
 		return signals.NoSignals, err
 	}
 	priceArray := traderutils.GetArrayFromCandles(candles)
-	ma := traderutils.GetM
+	ma := traderutils.GetMA(priceArray, bb.Pe
