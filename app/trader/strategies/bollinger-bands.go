@@ -44,4 +44,4 @@ func (bb *BollingerBands) Analyze() (string, error) {
 	ma := traderutils.GetMA(priceArray, bb.Period)
 	sd := traderutils.GetSD(priceArray, ma, bb.Period)
 	length := len(ma)
-	topbor
+	topborder := make([]float64, l
