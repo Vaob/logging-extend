@@ -47,4 +47,4 @@ func (bb *BollingerBands) Analyze() (string, error) {
 	topborder := make([]float64, length)
 	bottomborder := make([]float64, length)
 	for i := 0; i < length; i++ {
-		topborder[i] = ma[i] + s
+		topborder[i] = ma[i] + sd[i]*float64(bb.Fa
