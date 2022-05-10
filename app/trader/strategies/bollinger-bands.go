@@ -50,4 +50,4 @@ func (bb *BollingerBands) Analyze() (string, error) {
 		topborder[i] = ma[i] + sd[i]*float64(bb.Factor)
 		bottomborder[i] = ma[i] - sd[i]*float64(bb.Factor)
 	}
-	return bb.Solve(candles, to
+	return bb.Solve(candles, topborder, bottomborder
