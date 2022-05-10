@@ -48,4 +48,6 @@ func (bb *BollingerBands) Analyze() (string, error) {
 	bottomborder := make([]float64, length)
 	for i := 0; i < length; i++ {
 		topborder[i] = ma[i] + sd[i]*float64(bb.Factor)
-		bottomborder[i] = ma[i] - sd[i]*float6
+		bottomborder[i] = ma[i] - sd[i]*float64(bb.Factor)
+	}
+	retur
