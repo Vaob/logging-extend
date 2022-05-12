@@ -28,3 +28,19 @@ func (t *GetTrend) Solve(c *data.Candles, ma []float64) string {
 		if c.Array[length].Close < ma[length] {
 			return signals.Bear
 		}
+	}
+	return signals.NoSignals
+}
+
+func (t *GetTrend) Analyze() (string, error) {
+	candles := &data.Candles{}
+	candles.Array = make([]data.Candle, 0, 250)
+	err := candles.Read(t.CandlesFile)
+	if err != nil {
+		return signals.NoSignals, err
+	}
+
+	priceArray := traderutils.GetArrayFromCandles(candles)
+	ma := traderutils.GetMA(priceArray, t.MAFrame)
+	return t.Solve(candles, ma), nil
+}
