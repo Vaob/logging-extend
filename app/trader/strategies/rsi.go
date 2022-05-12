@@ -18,3 +18,23 @@ func (rsi *RSI) Set(candlesFile string, candlesFileVolume int) {
 	rsi.CandlesFile = candlesFile
 	rsi.CandlesFileVolume = candlesFileVolume
 }
+
+func (rsi *RSI) Solve(c *data.Candles, avggain, avglose []float64) string {
+	length := len(avggain)
+	if length != 0 {
+		index := 100.0 - (100.0 / (1.0 + (avggain[length-1] / avglose[length-1])))
+		if index > 70.0 {
+			return signals.Short
+		}
+		if index < 30.0 {
+			return signals.Long
+		}
+	}
+	return signals.NoSignals
+}
+
+func (rsi *RSI) Analyze() (string, error) {
+	candles := &data.Candles{}
+	candles.Array = make([]data.Candle, 0, rsi.CandlesFileVolume)
+	err := candles.Read(rsi.CandlesFile)
+	if err != nil {
