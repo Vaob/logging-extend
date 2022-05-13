@@ -38,3 +38,9 @@ func (rsi *RSI) Analyze() (string, error) {
 	candles.Array = make([]data.Candle, 0, rsi.CandlesFileVolume)
 	err := candles.Read(rsi.CandlesFile)
 	if err != nil {
+		return signals.NoSignals, err
+	}
+	priceArray := traderutils.GetArrayFromCandles(candles)
+	avggain, avglose := traderutils.CountAvgChanges(priceArray, rsi.Period)
+	return rsi.Solve(candles, avggain, avglose), nil
+}
