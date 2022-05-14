@@ -1,4 +1,4 @@
 package strategies
 
 type Strategy interface {
-	Analyze()
+	Analyze() (string, error) //strateg
