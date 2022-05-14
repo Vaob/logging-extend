@@ -1,3 +1,4 @@
 package strategies
 
-type S
+type Strategy interface {
+	Analyze()
