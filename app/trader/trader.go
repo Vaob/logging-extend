@@ -40,3 +40,25 @@ type TraderContext struct {
 }
 
 func (t *TraderContext) Nothing() {
+
+}
+
+func (e *Event) GetLastPrice(ctx *TraderContext) error {
+	url := "https://api.exmo.me/v1.1/ticker"
+	method := "POST"
+	payload := strings.NewReader("")
+	client := &http.Client{}
+	req, err := http.NewRequest(method, url, payload)
+	if err != nil {
+		return err
+	}
+	req.Header.Add("Content-Type", "application/x-www-form-urlencoded")
+	resp, err := client.Do(req)
+	if err != nil {
+		return err
+	}
+	defer resp.Body.Close()
+	body, err := ioutil.ReadAll(resp.Body)
+	if err != nil {
+		return err
+	}
