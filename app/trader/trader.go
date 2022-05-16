@@ -76,3 +76,26 @@ func (e *Event) GetLastPrice(ctx *TraderContext) error {
 }
 
 func (e *Event) Init(eventType string, ctx *TraderContext) error { // loading context for our event
+
+	err := e.GetLastPrice(ctx)
+	if err != nil {
+		return err
+	}
+
+	trades := &data.Trades{}
+	trades.Array = make([]data.Trade, 0, ctx.TradesFileVolume)
+	err = trades.Read(ctx.TradesFile)
+	if err != nil {
+		return err
+	}
+	e.Trades = *trades
+	e.Action = eventType
+	return nil
+}
+
+func (e *Event) HandleOpenedTrades(ctx *TraderContext) error {
+	for i := range e.Trades.Array {
+		if e.Trades.Array[i].Action == signals.Long && e.Trades.Array[i].StopLimit > e.LastPrice {
+			err := e.CloseTrade(&e.Trades.Array[i], ctx)
+			if err != nil {
+				return err
