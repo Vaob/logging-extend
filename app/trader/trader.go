@@ -62,3 +62,17 @@ func (e *Event) GetLastPrice(ctx *TraderContext) error {
 	if err != nil {
 		return err
 	}
+	ticker := &data.Ticker{}
+
+	err = ticker.ParseJsonTickers([]byte(body), ctx.TradingPair)
+	if err != nil {
+		return err
+	}
+	e.LastPrice, err = strconv.ParseFloat(ticker.Avg, 64)
+	if err != nil {
+		return err
+	}
+	return nil
+}
+
+func (e *Event) Init(eventType string, ctx *TraderContext) error { // loading context for our event
