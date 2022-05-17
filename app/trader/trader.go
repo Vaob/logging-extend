@@ -143,3 +143,24 @@ func (e *Event) Handle(ctx *TraderContext) error { // checking event context and
 	}
 	err = e.HandleSignal(ctx)
 	if err != nil {
+		return err
+	}
+	return nil
+}
+
+func (e *Event) OpenTrade(ctx *TraderContext) error {
+	newTrade := &data.Trade{}
+	newTrade.Action = e.Action
+	now := time.Now()
+	newTrade.Id = now.Unix()
+	if e.Action == signals.Long {
+		newTrade.StopLimit = e.LastPrice - e.LastPrice*ctx.StopLimitPercent
+	} else if e.Action == signals.Short {
+		newTrade.StopLimit = e.LastPrice + e.LastPrice*ctx.StopLimitPercent
+	}
+	newTrade.OpenPrice = e.LastPrice
+	newTrade.Status = signals.TradeOpened
+	newTrade.Quantity = ctx.TradeAmount
+	e.Trades.Array = append(e.Trades.Array, *newTrade)
+	err := data.Rewrite(&e.Trades, ctx.TradesFile)
+	if err != nil {
