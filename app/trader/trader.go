@@ -123,3 +123,23 @@ func (e *Event) HandleSignal(ctx *TraderContext) error {
 				err = e.OpenTrade(ctx)
 				if err != nil {
 					return err
+				}
+			}
+		}
+		if len(e.Trades.Array) == 0 {
+			err := e.OpenTrade(ctx)
+			if err != nil {
+				return err
+			}
+		}
+	}
+	return nil
+}
+
+func (e *Event) Handle(ctx *TraderContext) error { // checking event context and making trades
+	err := e.HandleOpenedTrades(ctx)
+	if err != nil {
+		return err
+	}
+	err = e.HandleSignal(ctx)
+	if err != nil {
