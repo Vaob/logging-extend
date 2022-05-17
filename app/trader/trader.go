@@ -99,3 +99,27 @@ func (e *Event) HandleOpenedTrades(ctx *TraderContext) error {
 			err := e.CloseTrade(&e.Trades.Array[i], ctx)
 			if err != nil {
 				return err
+			}
+		}
+		if e.Trades.Array[i].Action == signals.Short && e.Trades.Array[i].StopLimit < e.LastPrice {
+			err := e.CloseTrade(&e.Trades.Array[i], ctx)
+			if err != nil {
+				return err
+			}
+		}
+	}
+	return nil
+}
+
+func (e *Event) HandleSignal(ctx *TraderContext) error {
+	if e.Action == signals.Long || e.Action == signals.Short {
+		if len(e.Trades.Array) != 0 && e.Trades.Array[len(e.Trades.Array)-1].Action != e.Action {
+			lastTrade := &e.Trades.Array[len(e.Trades.Array)-1]
+			if lastTrade.Action != e.Action {
+				err := e.CloseTrade(lastTrade, ctx)
+				if err != nil {
+					return err
+				}
+				err = e.OpenTrade(ctx)
+				if err != nil {
+					return err
