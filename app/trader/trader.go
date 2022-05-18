@@ -185,3 +185,22 @@ func (e *Event) CloseTrade(t *data.Trade, ctx *TraderContext) error {
 	err := e.Trades.Array[tradeIndex].Write(ctx.TradesHistoryFile) // write trade to archive
 	if err != nil {
 		return err
+	}
+
+	fmt.Println("order closed:")
+	fmt.Println(e.Trades.Array[tradeIndex])
+
+	e.Trades.Array = append(e.Trades.Array[:tradeIndex], e.Trades.Array[tradeIndex+1:]...) // deleting trade
+
+	err = data.Rewrite(&e.Trades, ctx.TradesFile) // rewrite open trades file
+	if err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (t *Trader) Trade() error {
+	eventType, err := t.Strategy.Analyze()
+	if err != nil {
+		return err
