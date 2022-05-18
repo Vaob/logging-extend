@@ -204,3 +204,21 @@ func (t *Trader) Trade() error {
 	eventType, err := t.Strategy.Analyze()
 	if err != nil {
 		return err
+	}
+	e := &Event{}
+	err = e.Init(eventType, &t.Context)
+	if err != nil {
+		return err
+	}
+
+	err = e.Handle(&t.Context)
+	if err != nil {
+		return err
+	}
+	return nil
+}
+
+func (t *Trader) Run() {
+	for {
+		err := t.Trade()
+		if err != nil {
