@@ -164,3 +164,24 @@ func (e *Event) OpenTrade(ctx *TraderContext) error {
 	e.Trades.Array = append(e.Trades.Array, *newTrade)
 	err := data.Rewrite(&e.Trades, ctx.TradesFile)
 	if err != nil {
+		return err
+	}
+	fmt.Println("order opened:")
+	fmt.Println(newTrade)
+	return nil
+}
+
+func (e *Event) CloseTrade(t *data.Trade, ctx *TraderContext) error {
+	var tradeIndex int
+	for i := range e.Trades.Array {
+		if t.Id == e.Trades.Array[i].Id {
+			tradeIndex = i
+		}
+	}
+	e.Trades.Array[tradeIndex].Status = signals.TradeClosed
+
+	e.Trades.Array[tradeIndex].ClosePrice = e.LastPrice
+
+	err := e.Trades.Array[tradeIndex].Write(ctx.TradesHistoryFile) // write trade to archive
+	if err != nil {
+		return err
