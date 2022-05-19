@@ -222,3 +222,9 @@ func (t *Trader) Run() {
 	for {
 		err := t.Trade()
 		if err != nil {
+			fmt.Println(err)
+			return
+		}
+		time.Sleep(t.Context.TraderTimeout * time.Second)
+	}
+}
