@@ -55,3 +55,25 @@ func CountAvgChanges(array []float64, frame int) ([]float64, []float64) {
 
 		if m != 0 {
 			avggain[i] = 100.0 * gains / float64(m)
+		}
+
+		if n != 0 {
+			avglose[i] = 100.0 * loses / float64(n)
+		}
+	}
+	return avggain, avglose
+}
+
+func GetArrayFromCandles(c *data.Candles) []float64 {
+	length := len(c.Array)
+	array := make([]float64, length)
+	for i := 0; i < length; i++ {
+		array[i] = c.Array[i].Close
+	}
+	return array
+}
+
+func ConvertCandleTime(inputTime int64) time.Time {
+	t := inputTime / 1000
+	return time.Unix(t, 0)
+}
