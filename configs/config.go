@@ -6,4 +6,4 @@ import (
 	"fmt"
 )
 
-type 
+type Config interface {
