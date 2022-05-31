@@ -7,3 +7,6 @@ import (
 )
 
 type Config interface {
+	Nothing()
+}
+
