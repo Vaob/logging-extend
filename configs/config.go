@@ -10,4 +10,4 @@ type Config interface {
 	Nothing()
 }
 
-func Load(c Config, f
+func Load(c Config, fileName string) erro
