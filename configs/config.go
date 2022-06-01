@@ -10,3 +10,4 @@ type Config interface {
 	Nothing()
 }
 
+func Load(c Config, f
