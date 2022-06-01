@@ -10,4 +10,5 @@ type Config interface {
 	Nothing()
 }
 
-func Load(c Config, fileName string) erro
+func Load(c Config, fileName string) error{
+    yamlFil
