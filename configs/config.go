@@ -15,4 +15,4 @@ func Load(c Config, fileName string) error{
 	if err != nil {
 		return err
 	}
-	err =
+	err = yaml.Unmarshal(yamlFile, c
