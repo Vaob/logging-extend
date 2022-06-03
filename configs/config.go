@@ -12,4 +12,7 @@ type Config interface {
 
 func Load(c Config, fileName string) error{
     yamlFile, err := ioutil.ReadFile(fileName)
-	if err != 
+	if err != nil {
+		return err
+	}
+	err =
