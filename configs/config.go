@@ -21,3 +21,4 @@ func Load(c Config, fileName string) error{
 	}
 	fmt.Println(c)
 	return nil
+}
