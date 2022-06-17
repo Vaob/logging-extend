@@ -19,3 +19,5 @@ func Load(c Config, fileName string) error{
 	if err != nil {
 		return err
 	}
+	fmt.Println(c)
+	return nil
