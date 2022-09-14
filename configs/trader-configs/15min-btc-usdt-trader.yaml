@@ -1,4 +1,5 @@
 TradingPair : "BTC_USDT"
 TradesFile  : "/cache/trades/15min-btc-usdt-trades.csv"
 TradesHistoryFile : "/cache/trades-history/15min-btc-usdt-trades-history.csv"
-CandlesFile       : "/cache/candles/15min-btc-usdt-candles.cs
+CandlesFile       : "/cache/candles/15min-btc-usdt-candles.csv"
+CandlesFileVolu
