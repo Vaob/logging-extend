@@ -4,4 +4,5 @@ TradesHistoryFile : "/cache/trades-history/15min-btc-usdt-trades-history.csv"
 CandlesFile       : "/cache/candles/15min-btc-usdt-candles.csv"
 CandlesFileVolume : 250
 TradesFileVolume  : 10
-StopLimitPer
+StopLimitPercent  : 0.015
+TradeAmount : 5
