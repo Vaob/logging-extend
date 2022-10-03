@@ -6,3 +6,4 @@ CandlesFileVolume : 250
 TradesFileVolume  : 10
 StopLimitPercent  : 0.015
 TradeAmount : 5
+TraderTimeout : 30
