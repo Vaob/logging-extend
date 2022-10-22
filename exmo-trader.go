@@ -4,4 +4,6 @@ import (
 	"exmo-trading/app/datahandler"
 	"exmo-trading/app/trader"
 	"exmo-trading/app/trader/strategies"
-	config "exmo-trading/confi
+	config "exmo-trading/configs"
+	"fmt"
+	"path/filepath"
