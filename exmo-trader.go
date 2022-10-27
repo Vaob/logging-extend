@@ -10,4 +10,5 @@ import (
 	"time"
 )
 
-type 
+type App struct {
+	Traders 
