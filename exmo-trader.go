@@ -11,4 +11,5 @@ import (
 )
 
 type App struct {
-	Traders 
+	Traders      []trader.Trader
+	Da
