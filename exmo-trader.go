@@ -12,4 +12,4 @@ import (
 
 type App struct {
 	Traders      []trader.Trader
-	Da
+	DataHandlers []da
