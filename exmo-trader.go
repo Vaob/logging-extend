@@ -12,4 +12,7 @@ import (
 
 type App struct {
 	Traders      []trader.Trader
-	DataHandlers []datahandler.Handle
+	DataHandlers []datahandler.Handler
+}
+
+func Prep
