@@ -15,4 +15,4 @@ type App struct {
 	DataHandlers []datahandler.Handler
 }
 
-func PrepareTrader(path, config
+func PrepareTrader(path, configName string, strategy
