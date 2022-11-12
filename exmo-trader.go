@@ -16,4 +16,5 @@ type App struct {
 }
 
 func PrepareTrader(path, configName string, strategy strategies.Strategy) trader.Trader {
-	trader := trader.T
+	trader := trader.Trader{}
+	err := config.Load(&t
