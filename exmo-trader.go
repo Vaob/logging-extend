@@ -19,4 +19,6 @@ func PrepareTrader(path, configName string, strategy strategies.Strategy) trader
 	trader := trader.Trader{}
 	err := config.Load(&trader.Context, configName)
 	if err != nil {
-		fmt
+		fmt.Println(err)
+	}
+	strateg
