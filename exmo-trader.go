@@ -21,4 +21,4 @@ func PrepareTrader(path, configName string, strategy strategies.Strategy) trader
 	if err != nil {
 		fmt.Println(err)
 	}
-	strategy.Set(path + tra
+	strategy.Set(path + trader.Context.Candles
