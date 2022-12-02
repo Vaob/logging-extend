@@ -22,4 +22,4 @@ func PrepareTrader(path, configName string, strategy strategies.Strategy) trader
 		fmt.Println(err)
 	}
 	strategy.Set(path + trader.Context.CandlesFile, trader.Context.CandlesFileVolume)
-	trader.Context.TradesFile 
+	trader.Context.TradesFile = path + trader.Context.
