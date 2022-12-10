@@ -23,4 +23,4 @@ func PrepareTrader(path, configName string, strategy strategies.Strategy) trader
 	}
 	strategy.Set(path + trader.Context.CandlesFile, trader.Context.CandlesFileVolume)
 	trader.Context.TradesFile = path + trader.Context.TradesFile
-	trader.Context.TradesHistoryFile = path + trade
+	trader.Context.TradesHistoryFile = path + trader.Context.TradesHisto
