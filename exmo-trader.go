@@ -25,3 +25,4 @@ func PrepareTrader(path, configName string, strategy strategies.Strategy) trader
 	trader.Context.TradesFile = path + trader.Context.TradesFile
 	trader.Context.TradesHistoryFile = path + trader.Context.TradesHistoryFile
 	trader.Context.CandlesFile = path + trader.Context.CandlesFile
+	trader.Strategy = str
