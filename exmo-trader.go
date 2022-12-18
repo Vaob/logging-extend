@@ -28,3 +28,5 @@ func PrepareTrader(path, configName string, strategy strategies.Strategy) trader
 	trader.Strategy = strategy
 	return trader
 }
+
+func PrepareD
