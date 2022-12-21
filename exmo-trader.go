@@ -29,4 +29,5 @@ func PrepareTrader(path, configName string, strategy strategies.Strategy) trader
 	return trader
 }
 
-func PrepareDataHandler(path, configName strin
+func PrepareDataHandler(path, configName string) datahandler.Handler {
+	
