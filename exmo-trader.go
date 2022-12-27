@@ -31,4 +31,4 @@ func PrepareTrader(path, configName string, strategy strategies.Strategy) trader
 
 func PrepareDataHandler(path, configName string) datahandler.Handler {
 	datahandler := datahandler.Handler{}
-	err := c
+	err := config.Load(&datahandler, 
