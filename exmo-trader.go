@@ -36,4 +36,7 @@ func PrepareDataHandler(path, configName string) datahandler.Handler {
 		fmt.Println(err)
 	}
 	datahandler.CandlesFile = path + datahandler.CandlesFile
-	return data
+	return datahandler
+}
+
+func PrepareAp
