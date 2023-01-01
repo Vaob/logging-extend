@@ -33,4 +33,6 @@ func PrepareDataHandler(path, configName string) datahandler.Handler {
 	datahandler := datahandler.Handler{}
 	err := config.Load(&datahandler, configName)
 	if err != nil {
-		fmt.Print
+		fmt.Println(err)
+	}
+	datahandler.C
