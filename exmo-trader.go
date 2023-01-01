@@ -35,4 +35,5 @@ func PrepareDataHandler(path, configName string) datahandler.Handler {
 	if err != nil {
 		fmt.Println(err)
 	}
-	datahandler.CandlesFile = path + datahan
+	datahandler.CandlesFile = path + datahandler.CandlesFile
+	return data
