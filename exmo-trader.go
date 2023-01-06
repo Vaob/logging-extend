@@ -40,4 +40,5 @@ func PrepareDataHandler(path, configName string) datahandler.Handler {
 }
 
 func PrepareApp() *App {
-	app := A
+	app := App{}
+	fmt.Println("s
