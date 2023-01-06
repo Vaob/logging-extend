@@ -39,4 +39,5 @@ func PrepareDataHandler(path, configName string) datahandler.Handler {
 	return datahandler
 }
 
-func PrepareAp
+func PrepareApp() *App {
+	app := A
