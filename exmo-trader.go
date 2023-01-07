@@ -46,4 +46,5 @@ func PrepareApp() *App {
 
 	path, _ := filepath.Abs("./")
 
-	fmt.Println("
+	fmt.Println("prepared traders: ")
+	
