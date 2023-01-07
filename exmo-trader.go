@@ -41,4 +41,5 @@ func PrepareDataHandler(path, configName string) datahandler.Handler {
 
 func PrepareApp() *App {
 	app := App{}
-	fmt.Println("s
+	fmt.Println("set up app...")
+	time
