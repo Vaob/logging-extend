@@ -44,4 +44,6 @@ func PrepareApp() *App {
 	fmt.Println("set up app...")
 	time.Sleep(1 * time.Second)
 
-	path, _ := filepath.Abs("
+	path, _ := filepath.Abs("./")
+
+	fmt.Println("
