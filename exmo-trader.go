@@ -42,4 +42,6 @@ func PrepareDataHandler(path, configName string) datahandler.Handler {
 func PrepareApp() *App {
 	app := App{}
 	fmt.Println("set up app...")
-	time.Sleep(1 * time.Second
+	time.Sleep(1 * time.Second)
+
+	path, _ := filepath.Abs("
