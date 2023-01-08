@@ -47,4 +47,5 @@ func PrepareApp() *App {
 	path, _ := filepath.Abs("./")
 
 	fmt.Println("prepared traders: ")
-	time.Sleep(1 * time
+	time.Sleep(1 * time.Second)
+	app.Trad
