@@ -48,4 +48,4 @@ func PrepareApp() *App {
 
 	fmt.Println("prepared traders: ")
 	time.Sleep(1 * time.Second)
-	app.Traders = append(app.Trade
+	app.Traders = append(app.Traders, PrepareTrader(path, p
