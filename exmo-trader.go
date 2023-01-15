@@ -49,4 +49,4 @@ func PrepareApp() *App {
 	fmt.Println("prepared traders: ")
 	time.Sleep(1 * time.Second)
 	app.Traders = append(app.Traders, PrepareTrader(path, path+
-		"/configs/trader-
+		"/configs/trader-configs/5min-bt
