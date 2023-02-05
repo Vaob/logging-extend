@@ -51,4 +51,4 @@ func PrepareApp() *App {
 	app.Traders = append(app.Traders, PrepareTrader(path, path+
 		"/configs/trader-configs/5min-btc-usdt-trader.yaml", &strategies.BollingerBands{}))
 	app.Traders = append(app.Traders, PrepareTrader(path, path+
-		"/configs/
+		"/configs/trader-configs/15min-bt
