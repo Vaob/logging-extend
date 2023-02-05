@@ -49,4 +49,5 @@ func PrepareApp() *App {
 	fmt.Println("prepared traders: ")
 	time.Sleep(1 * time.Second)
 	app.Traders = append(app.Traders, PrepareTrader(path, path+
-		"/configs/trader-configs/5min-btc-usdt-trader.yaml", &strategies.BollingerBa
+		"/configs/trader-configs/5min-btc-usdt-trader.yaml", &strategies.BollingerBands{}))
+	ap
