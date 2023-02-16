@@ -54,4 +54,5 @@ func PrepareApp() *App {
 		"/configs/trader-configs/15min-btc-usdt-trader.yaml", &strategies.RSI{}))
 
 	fmt.Println("prepared datahandlers: ")
-	time.Sleep(1 *
+	time.Sleep(1 * time.Second)
+	app.Dat
