@@ -55,4 +55,4 @@ func PrepareApp() *App {
 
 	fmt.Println("prepared datahandlers: ")
 	time.Sleep(1 * time.Second)
-	app.Dat
+	app.DataHandlers = append(app.Da
