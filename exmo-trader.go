@@ -56,4 +56,4 @@ func PrepareApp() *App {
 	fmt.Println("prepared datahandlers: ")
 	time.Sleep(1 * time.Second)
 	app.DataHandlers = append(app.DataHandlers, PrepareDataHandler(path, path+
-		"
+		"/configs/datahandler-configs
