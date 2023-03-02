@@ -60,4 +60,8 @@ func PrepareApp() *App {
 	app.DataHandlers = append(app.DataHandlers, PrepareDataHandler(path, path+
 		"/configs/datahandler-configs/15min-btc-usdt-datahandler.yaml"))
 
-	return &
+	return &app
+}
+
+func main() {
+	
