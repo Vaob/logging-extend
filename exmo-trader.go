@@ -64,4 +64,5 @@ func PrepareApp() *App {
 }
 
 func main() {
-	App := PrepareApp(
+	App := PrepareApp()
+	for i := range App.Data
