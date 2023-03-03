@@ -64,4 +64,4 @@ func PrepareApp() *App {
 }
 
 func main() {
-	
+	App := PrepareApp(
