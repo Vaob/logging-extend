@@ -65,4 +65,5 @@ func PrepareApp() *App {
 
 func main() {
 	App := PrepareApp()
-	for i := range App.Data
+	for i := range App.DataHandlers {
+		
