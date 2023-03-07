@@ -66,4 +66,4 @@ func PrepareApp() *App {
 func main() {
 	App := PrepareApp()
 	for i := range App.DataHandlers {
-		fmt.Println("№" + fmt.Sp
+		fmt.Println("№" + fmt.Sprintf("%d", i+1) + " d
