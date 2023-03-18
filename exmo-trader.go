@@ -70,4 +70,5 @@ func main() {
 		go App.DataHandlers[i].Run()
 		time.Sleep(1 * time.Second)
 	}
-	time.Sl
+	time.Sleep(5 * time.Second)
+	f
