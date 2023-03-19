@@ -71,4 +71,4 @@ func main() {
 		time.Sleep(1 * time.Second)
 	}
 	time.Sleep(5 * time.Second)
-	f
+	for i := range App.Traders {
