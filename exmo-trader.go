@@ -72,3 +72,4 @@ func main() {
 	}
 	time.Sleep(5 * time.Second)
 	for i := range App.Traders {
+		fmt.Println("№" + fmt.
