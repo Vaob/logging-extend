@@ -74,4 +74,6 @@ func main() {
 	for i := range App.Traders {
 		fmt.Println("№" + fmt.Sprintf("%d", i+1) + " trader run ...")
 		go App.Traders[i].Run()
-		time.Sleep(1 * 
+		time.Sleep(1 * time.Second)
+	}
+	fo
