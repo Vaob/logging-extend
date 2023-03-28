@@ -76,4 +76,5 @@ func main() {
 		go App.Traders[i].Run()
 		time.Sleep(1 * time.Second)
 	}
-	fo
+	for {
+		time.Sleep(1000 
