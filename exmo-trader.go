@@ -77,4 +77,6 @@ func main() {
 		time.Sleep(1 * time.Second)
 	}
 	for {
-		time.Sleep(1000 
+		time.Sleep(1000 * time.Second)
+	}
+}
