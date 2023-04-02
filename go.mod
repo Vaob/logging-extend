@@ -2,4 +2,4 @@ module exmo-trading
 
 go 1.17
 
-require gopkg.in
+require gopkg.in/yaml.v2 v2.4.0
